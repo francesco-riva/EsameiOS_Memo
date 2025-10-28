@@ -14,11 +14,14 @@ struct Registration: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 30) {
+                Image(systemName: "person.fill")
+                    .font(.system(size: 50, weight: .bold))
+                    .padding(.top, 40)
+                
                 Text("Registrazione")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .frame(maxWidth: .infinity, alignment: .center)
-                    .padding(.top, 40)
 
                 VStack(spacing: 20) {
                     TextField("Nome", text: $name)
